@@ -68,7 +68,7 @@ export const ProjectSummary = ({
         </span>
       </div>
       <Heading
-        level={3}
+        level={1}
         as="h2"
         className={styles.title}
         data-visible={visible}
@@ -166,12 +166,12 @@ export const ProjectSummary = ({
               {!alternate && !isMobile && (
                 <>
                   {renderDetails(visible)}
-                  {renderPreview(visible)}
+                  {/* {renderPreview(visible)} */}
                 </>
               )}
               {(alternate || isMobile) && (
                 <>
-                  {renderPreview(visible)}
+                  {/* {renderPreview(visible)} */}
                   {renderDetails(visible)}
                 </>
               )}

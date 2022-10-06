@@ -21,16 +21,11 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Hamish, currently I live in Sydney working as a senior product designer at{' '}
-      <Link href="https://www.qwilr.com">Qwilr</Link>. My projects include UX design, UI
-      animations, and icon illustration. Being comfortable with code allows me to rapidly
-      prototype and validate experiences. If you’re interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>.
+      I’m Parth, currently I live in Delhi working as a software devloper.
+      My niches are in FinTech, EdTech, Data science and Data engineering.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like to practice Brazilian Jiu Jitsu, play video games, and{' '}
-      <Link href="/projects/volkihar-knight">make mods</Link>. I’m always down for hearing
-      about new projects, so feel free to drop me a line.
+      I graduated from galgotias University in 2021 with a degree in Bchelors of Tech (CSE).
     </Text>
   </Fragment>
 );
@@ -77,7 +72,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   About Me
                 </div>
               </div>
-              <div className={styles.image}>
+              {/* <div className={styles.image}>
                 <Image
                   reveal
                   delay={100}
@@ -96,7 +91,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 >
                   <use href={`${profileKatakana}#katakana-profile`} />
                 </svg>
-              </div>
+              </div> */}
             </div>
           </div>
         )}

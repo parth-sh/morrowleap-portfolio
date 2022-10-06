@@ -18,7 +18,7 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Developer', 'Prototyper', 'Animator', 'Illustrator', 'Modder'];
+const disciplines = ['Prototyping', 'Testing', 'Management'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -68,8 +68,8 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <Meta
-        title="Designer + Developer"
-        description="Design portfolio of Hamish Williams — a product designer working on web & mobile
+        title=""
+        description="Design portfolio of Parth Sharma — a product designer working on web & mobile
           apps with a focus on motion, experience design, and accessibility."
       />
       <Intro
@@ -84,9 +84,11 @@ export const Home = () => {
         visible={visibleSections.includes(projectOne.current)}
         index={1}
         title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
+        description="Designing a Learning Management System 
+          to help educators build better online courseware.
+          Allow them to schedule tests for students."
         buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        buttonLink="http://parth-stack-learning-management-system-1.glitch.me/dashboard"
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
@@ -104,10 +106,10 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        title="A marketplace for goverment insurances/services"
+        description="Prototyping a single platform for all Indian Citizens to access pan India e-Gov insurances ranging from Central to Local Government bodies."
+        buttonText="View Project"
+        buttonLink="https://github.com/parth-sh/app_GovernmentHealthSchemes#ek_yojna"
         model={{
           type: 'phone',
           alt: 'App login screen',
@@ -128,10 +130,10 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        title="Monthly finance tracker"
+        description="A solution for managing daily cash flow and keeping a tab, in your digital cashbook"
         buttonText="View project"
-        buttonLink="/projects/slice"
+        buttonLink="https://play.google.com/store/apps/details?id=com.parth8421.expenses"
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
