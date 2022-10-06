@@ -1,5 +1,4 @@
 import profileKatakana from 'assets/katakana-profile.svg?url';
-import profileImgLarge from 'assets/profile-large.jpg';
 import profileImgPlaceholder from 'assets/profile-placeholder.jpg';
 import profileImg from 'assets/profile.jpg';
 import { Button } from 'components/Button';
@@ -72,12 +71,12 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   About Me
                 </div>
               </div>
-              {/* <div className={styles.image}>
+              <div className={styles.image}>
                 <Image
                   reveal
                   delay={100}
                   placeholder={profileImgPlaceholder}
-                  srcSet={[profileImg, profileImgLarge]}
+                  srcSet={[profileImg]}
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
                   alt="Me standing in front of the Torii on Miyajima, an island off the coast of Hiroshima in Japan"
                 />
@@ -91,7 +90,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 >
                   <use href={`${profileKatakana}#katakana-profile`} />
                 </svg>
-              </div> */}
+              </div>
             </div>
           </div>
         )}
