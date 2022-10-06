@@ -20,11 +20,10 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Parth, currently I live in Delhi working as a software devloper.
-      My niches are in FinTech, EdTech, Data science and Data engineering.
+      I’m Parth currently, I live in Delhi working as a Software Developer. My niches are in FinTech, EdTech, Data science, and Data engineering.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I graduated from galgotias University in 2021 with a degree in Bchelors of Tech (CSE).
+      I graduated from Galgotias University in 2021 with a degree in Bachelor of Tech (CSE).
     </Text>
   </Fragment>
 );
