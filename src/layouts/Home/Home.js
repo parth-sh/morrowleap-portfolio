@@ -17,6 +17,7 @@ import { Profile } from 'layouts/Home/Profile';
 import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
+import ReactGA from "react-ga4";
 
 const disciplines = ['Prototyping', 'Testing', 'Management'];
 
@@ -30,6 +31,11 @@ export const Home = () => {
   const details = useRef();
 
   useEffect(() => {
+
+    // https://www.youtube.com/watch?v=H-D-kaCjKfc
+    ReactGA.initialize("G-FV67265V0X")
+    ReactGA.send("/home")
+
     const sections = [intro, projectOne, projectTwo, projectThree, details];
 
     const sectionObserver = new IntersectionObserver(
