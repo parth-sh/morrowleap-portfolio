@@ -33,8 +33,8 @@ export const Home = () => {
   useEffect(() => {
 
     // https://www.youtube.com/watch?v=H-D-kaCjKfc
-    ReactGA.initialize("G-FV67265V0X")
-    ReactGA.send("/home")
+    ReactGA.initialize("G-FV67265V0X");
+    ReactGA.send("/home");
 
     const sections = [intro, projectOne, projectTwo, projectThree, details];
 
